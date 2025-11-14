@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - La Tête dans les Nuages</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="logo.png" alt="Logo La Tête dans les Nuages" class="logo" />
+
+      <h1>La Tête dans les Nuages</h1>
+      <p class="slogan">Coiffure à domicile – douceur & élégance</p>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact-section">
+      <h2>Me contacter</h2>
+      <p class="intro">
+        ✨ Prenons un moment pour imaginer votre prochain look ✨
+      </p>
+
+      <!-- Liste corrigée -->
+      <ul class="contact-list">
+        <li class="tel-line">
+          📞 <strong>Téléphone :</strong> 06 56 75 07 71
+          <a
+            href="https://wa.me/33656750771"
+            target="_blank"
+            class="btn-small-wa"
+          >
+            💬 WhatsApp
+          </a>
+        </li>
+
+        <li>
+          📧 <strong>Email :</strong> latetedanslesnuages.coiffure@gmail.com
+        </li>
+
+        <li>
+          📸 <strong>Instagram :</strong>
+          <a
+            href="https://www.instagram.com/latetedans_lesnuages.coiffure"
+            target="_blank"
+            >@latetedans_lesnuages.coiffure</a
+          >
+        </li>
+      </ul>
+
+      <!-- Formulaire -->
+      <div class="form-box">
+        <h3>Ou envoyez-moi un message :</h3>
+
+        <form id="contactForm" class="form-contact">
+          <input type="text" id="nom" placeholder="Votre nom" required />
+          <input type="email" id="email" placeholder="Votre email" required />
+          <textarea
+            id="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+
+        <p id="confirmation" class="confirmation">
+          ✨ Votre message a bien été envoyé ! ✨
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 La Tête dans les Nuages – Nissrine</p>
+    </footer>
+  </body>
+</html>

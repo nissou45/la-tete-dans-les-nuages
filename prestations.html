@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prestations - La Tête dans les Nuages</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="prestations.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo La Tête dans les Nuages" class="logo" />
+
+      <h1>La Tête dans les Nuages</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html" class="active">Prestations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2 style="text-align: center">Mes prestations</h2>
+
+      <!-- ICI : on utilise la classe FLEX du CSS -->
+      <div class="prestations-container">
+        <div class="card">
+          <h3>Coiffures événementielles</h3>
+          <p>
+            Chignons, tresses, attaches romantiques pour mariages et soirées.
+          </p>
+          <button
+            class="btn-details"
+            data-title="Coiffures événementielles"
+            data-price="45€"
+            data-time="45 min"
+            data-description="Chignon, tresse, attache romantique adaptée à votre style et à votre événement."
+          >
+            Voir détails
+          </button>
+        </div>
+
+        <div class="card">
+          <h3>Colorations & Balayages</h3>
+          <p>Techniques personnalisées selon votre style et votre carnation.</p>
+          <button
+            class="btn-details"
+            data-title="Colorations & Balayages"
+            data-price="À partir de 65€"
+            data-time="1h30 à 2h"
+            data-description="Balayage, ombré ou coloration complète réalisée selon votre carnation, votre style et votre historique capillaire."
+          >
+            Voir détails
+          </button>
+        </div>
+
+        <div class="card">
+          <h3>Coiffures enfants & ado</h3>
+          <p>Des moments fun et rassurants pour les plus jeunes.</p>
+          <button
+            class="btn-details"
+            data-title="Coiffures enfants & ado"
+            data-price="20€"
+            data-time="20 à 30 min"
+            data-description="Coiffures rapides, fun et rassurantes pensées spécialement pour les plus jeunes."
+          >
+            Voir détails
+          </button>
+        </div>
+
+        <div class="card">
+          <h3>Cheveux frisés & bouclés</h3>
+          <p>
+            Diagnostic, soin et coupe à sec pour respecter votre texture
+            naturelle.
+          </p>
+          <button
+            class="btn-details"
+            data-title="Cheveux frisés & bouclés"
+            data-price="Coupe : 40€ — Soin + définition : 55€"
+            data-time="45 min à 1h"
+            data-description="Diagnostic personnalisé, coupe à sec, définition des boucles et conseils pour entretenir votre texture naturelle."
+          >
+            Voir détails
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- MODALE -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">✖</span>
+        <h3 id="modal-title"></h3>
+        <p><strong>Prix : </strong><span id="modal-price"></span></p>
+        <p><strong>Durée : </strong><span id="modal-time"></span></p>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+    <footer>
+      <p>© 2025 La Tête dans les Nuages - Nissrine</p>
+    </footer>
+  </body>
+</html>
