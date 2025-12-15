@@ -1,0 +1,172 @@
+/* SECTION CONTACT */
+.contact-section {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section .intro {
+  text-align: center;
+  color: #7a7a7a;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* LISTE CONTACT */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  line-height: 2;
+  font-size: 16px;
+}
+
+.contact-list a {
+  color: #d3a6b4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* WhatsApp bouton */
+.btn-small-wa {
+  background: #e8dfd8;
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: #6a6a6a;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.btn-small-wa:hover {
+  background: #d9d1cb;
+}
+
+/* LIGNE TÉLÉPHONE ALIGNÉE */
+.tel-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FORMULAIRE */
+.form-box {
+  background: #faf7f5;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.form-box h3 {
+  margin-bottom: 20px;
+  color: #6a6a6a;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contact input,
+.form-contact textarea {
+  padding: 12px;
+  border: 1px solid #d9d1cb;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-contact textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-contact button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #eadfda;
+  color: #6a6a6a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contact button:hover {
+  background: #e0d3cd;
+}
+
+/* MESSAGE DE CONFIRMATION */
+.confirmation {
+  margin-top: 15px;
+  display: none;
+  color: #7a7a7a;
+  font-weight: 500;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .tel-line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* MODALE OVERLAY */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+/* CONTENU DE LA MODALE */
+.modal-content {
+  background: #fff;
+  border-radius: 22px;
+  padding: 35px;
+  max-width: 520px;
+  width: 90%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+/* BOUTON FERMER */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 22px;
+  cursor: pointer;
+}
