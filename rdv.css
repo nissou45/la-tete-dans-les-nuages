@@ -1,0 +1,91 @@
+/*
+   PAGE PRENDRE RENDEZ-VOUS
+*/
+html,
+body {
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.rdv-calendar iframe {
+  max-width: 100%;
+}
+
+.rdv-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.rdv-text {
+  max-width: 700px;
+  text-align: center;
+}
+
+.rdv-calendar {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/* IFRAME CALENDLY */
+.rdv-calendar iframe {
+  width: 100%;
+  min-height: 700px;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Bouton WhatsApp centré */
+.rdv-text .about-buttons {
+  align-items: center;
+}
+/* RESET LAYOUT POUR PAGE RDV */
+.rdv-section {
+  display: block; /* on annule le flex */
+  width: 100%;
+}
+
+.rdv-section .rdv-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.rdv-section h2,
+.rdv-section p {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+nav {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+nav ul {
+  overflow-x: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
